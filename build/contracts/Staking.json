@@ -54,7 +54,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -67,7 +68,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -80,7 +82,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -93,18 +96,21 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "stateMutability": "payable",
-      "type": "receive"
+      "type": "receive",
+      "payable": true
     },
     {
       "inputs": [],
       "name": "stake",
       "outputs": [],
       "stateMutability": "payable",
-      "type": "function"
+      "type": "function",
+      "payable": true
     },
     {
       "inputs": [],
@@ -137,7 +143,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     }
   ],
   "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"exampleExternalContractAddress\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[],\"name\":\"Executed\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"staker\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"Staked\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"balances\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"deadline\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"exampleExternalContract\",\"outputs\":[{\"internalType\":\"contract ExampleExternalContract\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"execute\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"stake\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"threshold\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"timeLeft\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address payable\",\"name\":\"_to\",\"type\":\"address\"}],\"name\":\"withdraw\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"stateMutability\":\"payable\",\"type\":\"receive\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Staking.sol\":\"Staking\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/utils/math/Math.sol\":{\"keccak256\":\"0xfaad496c1c944b6259b7dc70b4865eb1775d6402bc0c81b38a0b24d9f525ae37\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2f60ddc4639589b1d7a87cd647561be4c71ddf9a9dcf55f38db75e24ef1f6c5b\",\"dweb:/ipfs/QmTocvyQx3DPrzsFePtrhDGM6eYxUh3v8iBN3D59yoeuBt\"]},\"project:/contracts/ExampleExternalContract.sol\":{\"keccak256\":\"0x3fc7c82b6b889f93471d085dd10aebe1a9a8e884e14e4ac29467cbcdf9d906cf\",\"urls\":[\"bzz-raw://ca0326e421eedf09d8d0ec6063fa1bfd591f993c179a58d686b2528c1a2ba347\",\"dweb:/ipfs/QmSGmwU25gzxDjufLXkLAKQdiQYdKp4NChN6veEtXWgK9L\"]},\"project:/contracts/Staking.sol\":{\"keccak256\":\"0xfe15b76d40d60162deb4885157d983721ed8d6fc96e447fee9f82757c489de4c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d45704e42008302184aa95288be26d2e2f7db9d95eb6811d76f18314f5411778\",\"dweb:/ipfs/QmeSRsBCGQCJh72Ui5JTLtfA9QEhsUqpT63qHrqcRfUQMA\"]}},\"version\":1}",
@@ -8158,10 +8165,17 @@
       "links": {},
       "address": "0x64361e0D2404e790d5f2594CC29A4e5692252B59",
       "transactionHash": "0xe5897f6d0b935383e6a512e43acd8fae3ba8d7d3e7082e58e597fc9b0a3f1193"
+    },
+    "1640437070093": {
+      "events": {},
+      "links": {},
+      "address": "0xCf62D97367D197A03D9C1c7E9C3f6601E4119C6e",
+      "transactionHash": "0x695b293838735bd42b51e995dc9ca2787c7a192f2f3b5c25f858d7041669b1f1"
     }
   },
   "schemaVersion": "3.4.3",
-  "updatedAt": "2021-12-20T19:53:13.619Z",
+  "updatedAt": "2021-12-25T12:59:20.469Z",
+  "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
     "methods": {},

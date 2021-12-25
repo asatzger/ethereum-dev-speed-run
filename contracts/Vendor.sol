@@ -36,10 +36,18 @@ contract Vendor is Ownable {
     }
 
     function withdraw() public onlyOwner {
+        require(address(this).balance > 0, "Contract has balance of zero");
         bool sent = payable(msg.sender).send(address(this).balance);
         require(sent, "Failed to send ether");
     } 
 
+    // @dev: should only be supplied via buyTokens() function; please do not simply send money
     receive() payable external {
+        revert();
+    }
+
+    // @dev: get current price of tokens on sale, denominated in ETH
+    function getPrice() public view returns(uint256) {
+        return tokensPerEth;
     }
 }

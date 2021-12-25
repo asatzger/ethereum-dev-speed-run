@@ -12,14 +12,16 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
       "name": "complete",
       "outputs": [],
       "stateMutability": "payable",
-      "type": "function"
+      "type": "function",
+      "payable": true
     }
   ],
   "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"complete\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"completed\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/ExampleExternalContract.sol\":\"ExampleExternalContract\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/ExampleExternalContract.sol\":{\"keccak256\":\"0x3fc7c82b6b889f93471d085dd10aebe1a9a8e884e14e4ac29467cbcdf9d906cf\",\"urls\":[\"bzz-raw://ca0326e421eedf09d8d0ec6063fa1bfd591f993c179a58d686b2528c1a2ba347\",\"dweb:/ipfs/QmSGmwU25gzxDjufLXkLAKQdiQYdKp4NChN6veEtXWgK9L\"]}},\"version\":1}",
@@ -593,10 +595,17 @@
       "links": {},
       "address": "0xf7e6a66D85B8ac8a452408c613Bb62dA93009832",
       "transactionHash": "0x69433623018447a3b403ff0da1f2134f45f88221cf0eb850ead9f02eeaeb3c1d"
+    },
+    "1640437070093": {
+      "events": {},
+      "links": {},
+      "address": "0xC15c27e1c2f5CF239d46B2cB8E548DEFBF6370b8",
+      "transactionHash": "0xa1c72c60daa4f5c878adeb490795fb571a88be2b792a5893af049fd205e766b2"
     }
   },
   "schemaVersion": "3.4.3",
-  "updatedAt": "2021-12-20T19:53:13.585Z",
+  "updatedAt": "2021-12-25T12:59:20.460Z",
+  "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
     "methods": {},
